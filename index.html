@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Group Project - Stream Finder </title>
+    <!-- authorization for youtube api -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="assets/javascript/youtube_init.js"></script>
+
+
+
+    <!-- Google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.8/css/mdb.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700|Josefin+Sans:300" rel="stylesheet">
+</head>
+
+
+<body class="container background">
+
+
+    <div class="row center">
+        <div class="col-12">
+
+            <!-- logo -->
+            <!-- <img class="logo center" src="assets/Images/noun_river_175419.png" alt="logo"> -->
+
+            <!-- header -->
+            <h1 class="cyan-text text-center display-1 fontOverride">Flick</h1>
+            <!-- sub header -->
+            <h3 class="cyan-text text-center fontOverride2">Clutter Free Movie Info</h3>
+
+            <!-- searchbar -->
+
+            <form class="form-inline active-cyan-3 active-cyan-4 justify-content-center p-4 fontOverride">
+                <button class="fa fa-search" aria-hidden="true" id="search-button"></button>
+                <input class="form-control form-control-sm ml-3 w-75" type="text" id="query" placeholder="Search" aria-label="Search">
+
+            </form>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12" id="youtubeDiv">
+                <i class="material-icons">
+                    movie
+                </i>
+                <i class="material-icons">
+                    supervised_user_circle
+                </i>
+            </div>
+        </div>
+
+
+        <!-- JQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- link to local Javascript -->
+        <script src="assets/javascript/app.js"></script>
+        <script src="assets/javascript/buttons.js"></script>
+        <!-- Bootstrap JS -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.8/js/mdb.min.js"></script>
+
+</body>
+
+</html>

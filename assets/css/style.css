@@ -1,0 +1,92 @@
+
+.background {
+    background-image: url("../Images/what-the-hex-dark.png");
+}
+
+/* .logo {
+    background-color: cyan;
+    border-radius: 50%;
+} */
+
+.fontOverride {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.fontOverride2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.center {
+    margin: auto;
+    margin-top: 30%;
+    width: 80%;
+    padding: 10px;
+}
+
+/* Searchbar */
+.material-icons {
+    color: whitesmoke;
+    font-size: 50px !important;
+    transition: ease-in-out .5s;
+    cursor: pointer;
+    margin-right: 20px;
+    text-align: center;
+    display: none;
+}
+
+.material-icons:hover {
+    transform: scale(1.25);
+    opacity: .8;
+}
+
+.form-control {
+    color: whitesmoke;
+    background: transparent;
+    text-align: center;
+}
+
+.form-control:focus {
+    color: whitesmoke;
+    background: transparent;
+    text-align: center;
+
+}
+
+.active-cyan-4 input[type=text]:focus:not([readonly]) {
+    border: 1px solid #4dd0e1;
+    box-shadow: 0 0 0 1px #4dd0e1;
+}
+.active-cyan-3 input[type=text] {
+    border: 1px solid #4dd0e1;
+    box-shadow: 0 0 0 1px #4dd0e1;
+}
+.active-cyan-3 .fa, .active-cyan-4 .fa {
+    color: #4dd0e1;
+}
+
+.dynamic-content {
+    margin-top: 250px;
+    margin: 0 auto;
+    width: 50%;
+}
+#search-button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+
+#youtubeDiv{
+    margin: 0 auto;
+    width: 100%;
+}
+
+#search-button:hover {
+    color: white;
+    transform: scale(1.5);
+}
+
+.show {
+    display: inline-block;
+}
