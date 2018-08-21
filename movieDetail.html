@@ -32,21 +32,15 @@
 
     <div class="row center">
         <div class="col-12">
-
             <!-- header -->
             <h1 class="cyan-text text-center display-1 fontOverride">Flick</h1>
             <!-- sub header -->
             <h3 class="cyan-text text-center fontOverride2">Clutter Free Movie Info</h3>
-            <!-- searchbar -->
-            <form class="form-inline active-cyan-3 active-cyan-4 justify-content-center p-4 fontOverride">
-                <button id="searchButton" class="fa fa-search" aria-hidden="true"></button>
-                <input id="searchText" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" autocomplete='off' aria-label="Search">
-
-            </form>
         </div>
 
         <div class='container'>
-        <div id="movies" class="row">
+        <div id="movie" class="well">
+            <!-- dynamic content -->
         </div>
         </div>
 
@@ -56,6 +50,7 @@
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <!-- JavaScript -->
         <script src='assets/javascript/app.js'></script>
+        <script> getMovie();</script>
 
 </body>
 
