@@ -2,6 +2,7 @@ $(document).ready(() => {
     $('#searchButton').on('click', function (event) {
         let searchText = $('#searchText').val();
         getMovies(searchText);
+        $('#searchText').val("");
         event.preventDefault();
 
     });
@@ -15,13 +16,13 @@ function getMovies(searchText) {
         let output = '';
         $.each(movies, (index, movie) => {
             output += `
-            <div class='col-md-3'>
-                <div class='well text-center'>
-                    <img src='${movie.Poster}'>
-                    <h5>${movie.Title}</h5> 
-                    <a onclick='movieSelected("${movie.imdbID}")' class='btn btn-primary href='file:///Users/nick/Repositories/Movie-Search/movieDetail.html'>Movie Details</a>
-                </div>
-            </div>
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src=${movie.Poster} alt="movie-poster">
+  <div class="card-body">
+    <h5 class="card-title">${movie.Title}</h5>
+    <a onclick='movieSelected("${movie.imdbID}")' class='btn btn-primary href='file:///Users/nick/Repositories/Movie-Search/movieDetail.html'>Movie Details</a>
+  </div>
+</div>
             `;
         });
 
@@ -47,8 +48,7 @@ function getMovie() {
     axios.get('https://www.omdbapi.com/?i=' + movieId + '&y=&plot=short&apikey=trilogy')
     .then((response) => {
         console.log(response);
-
-        let movie = response.data;
+        let movie = response.data
         let output = `
         <div class='row'>
         <div class='col-md-4'>
