@@ -73,6 +73,7 @@
 }
 
 #movies .col-md-3 .well {
+    background-color: transparent;
     font-family: 'Josefin Sans', sans-serif;
     color: whitesmoke;
     height:390px;
