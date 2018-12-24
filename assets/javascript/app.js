@@ -2,7 +2,6 @@ $(document).ready(() => {
     $('#searchButton').on('click', function (event) {
         let searchText = $('#searchText').val();
         getMovies(searchText);
-        $('#searchText').val("");
         event.preventDefault();
 
     });
@@ -50,30 +49,32 @@ function getMovie() {
         console.log(response);
         let movie = response.data
         let output = `
-        <div class='row'>
-        <div class='col-md-4'>
-            <img src='${movie.Poster}' class='thumbnail'>
-        </div>
-        <div class='col-md-8'>
-            <h2>'${movie.Title}'</h2>
-            <ul class='list-group'>
-                <li class='list-group-item'><strong>Genre:</strong> ${movie.Genre}</li>
-                <li class='list-group-item'><strong>Released:</strong> ${movie.Released}</li>
-                <li class='list-group-item'><strong>Rated:</strong> ${movie.Rated}</li>
-                <li class='list-group-item'><strong>IMDB Rating:</strong> ${movie.imdbRating}</li>
-                <li class='list-group-item'><strong>Director:</strong> ${movie.Director}</li>
-                <li class='list-group-item'><strong>Actors:</strong> ${movie.Actors}</li>
-            </ul>
-        </div>
-        </div>
-        <div class='row'>
-            <div class='well'>
-                <h3>Plot</h3>
-                ${movie.Plot}
-                <hr>
-                <a href='http://imdb.com/Title/${movie.imdbID}' target='_blank' class='btn btn-primary'>View IMDB</a>
-                <a href='index.html' class='btn btn-default'>Back to Search</a>
-            </div>
+            <div class="myContainer">
+                <div class='row'>
+                    <div class='col-lg-4'>
+                    <h2 class='customFontColor p-4'>${movie.Title}</h2>
+                        <img src='${movie.Poster}' class='thumbnail p-4'>
+                    </div>
+                    <div class='col-lg-8'>
+                        <ul class='customListStyle pt-4 customPosition'>
+                            <li class=''><strong>Genre:</strong> ${movie.Genre}</li>
+                            <li class=''><strong>Released:</strong> ${movie.Released}</li>
+                            <li class=''><strong>Rated:</strong> ${movie.Rated}</li>
+                            <li class=''><strong>IMDB Rating:</strong> ${movie.imdbRating}</li>
+                            <li class=''><strong>Director:</strong> ${movie.Director}</li>
+                            <li class=''><strong>Actors:</strong> ${movie.Actors}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class=' col-lg-12 customFontColor'>
+                        <h3 class='p-4'>Plot</h3>
+                        <p class='p-4'>${movie.Plot}</p>
+                        <hr>
+                        <a href='http://imdb.com/Title/${movie.imdbID}' target='_blank' class='btn btn-primary ml-4 mb-4'>View IMDB</a>
+                        <a href='index.html' class='btn btn-default mb-4'>Back to Search</a>
+                    </div>
+                </div>
             </div>
          `;
 
