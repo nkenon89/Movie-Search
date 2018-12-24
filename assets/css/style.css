@@ -2,8 +2,11 @@
 /* Background image */
 
 .background {
-    background-image: url("../Images/what-the-hex-dark.png");
+    /* background-image: url("https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/out-of-focus-bokeh-texture-4.jpg"); */
+    background-image: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/out-of-focus-bokeh-texture-2.jpg');
 }
+
+/* https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/out-of-focus-bokeh-texture-2.jpg */
 
 /* Google Fonts */
 
