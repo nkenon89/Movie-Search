@@ -1,0 +1,27 @@
+
+/* global styling */
+* {
+    box-sizing: border-box;
+}
+
+.customFontColor {
+    color: #4dd0e1;
+}
+
+.myContainer {
+    width: 100%;
+    background-color: black;
+    border: solid #4dd0e1 2px;
+}
+
+#customListStyle, li {
+    color: #4dd0e1;
+    list-style: none;
+    padding: 5px;
+
+}
+
+.customPosition {
+    position: relative;
+    top: 90px;
+}
